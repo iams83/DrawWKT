@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug DrawWKT",
+            "request": "launch",
+            "mainClass": "drawwkt.Main",
+            "projectName": "DrawWKT",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "Maven: compile"
+        },
+        {
+            "type": "java",
+            "name": "Run DrawWKT",
+            "request": "launch",
+            "mainClass": "drawwkt.Main",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "preLaunchTask": "Maven: compile"
+        }
+    ]
+}

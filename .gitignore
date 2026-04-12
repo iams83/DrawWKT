@@ -1,0 +1,8 @@
+bin/
+.classpath
+gen/
+.project
+.settings/
+jar-in-jar-loader.zip
+dist/
+target/
