@@ -83,7 +83,7 @@
                         </goals>
                         <configuration>
                             <headerType>gui</headerType>
-                            <outfile>${project.build.directory}/${project.artifactId}.exe</outfile>
+                            <outfile>${project.build.directory}/${project.artifactId}-${project.version}.exe</outfile>
                             <jar>${project.build.directory}/${project.artifactId}-${project.version}.jar</jar>
                             <icon>${project.basedir}/src/main/resources/drawwkt/icons/Lavanda.ico</icon>
                             <errTitle>${project.artifactId} Error</errTitle>
