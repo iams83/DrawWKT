@@ -85,7 +85,8 @@
                             <headerType>gui</headerType>
                             <outfile>${project.build.directory}/${project.artifactId}.exe</outfile>
                             <jar>${project.build.directory}/${project.artifactId}-${project.version}.jar</jar>
-                            <errTitle>DrawWKT Error</errTitle>
+                            <icon>${project.basedir}/src/main/resources/drawwkt/icons/Lavanda.ico</icon>
+                            <errTitle>${project.artifactId} Error</errTitle>
                             <classPath>
                                 <mainClass>${mainClass}</mainClass>
                                 </classPath>
