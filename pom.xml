@@ -15,6 +15,7 @@
 	<properties>
 	    <maven.compiler.source>21</maven.compiler.source>
 	    <maven.compiler.target>21</maven.compiler.target>
+        <mainClass>drawwkt.Main</mainClass>
     </properties>
 
     <dependencies>
@@ -51,7 +52,7 @@
                             <createDependencyReducedPom>false</createDependencyReducedPom>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>drawwkt.Main</mainClass>
+                                    <mainClass>${mainClass}</mainClass>
                                 </transformer>
                             </transformers>
                             <filters>
@@ -82,11 +83,11 @@
                         </goals>
                         <configuration>
                             <headerType>gui</headerType>
-                            <outfile>${project.build.directory}/DrawWKT.exe</outfile>
+                            <outfile>${project.build.directory}/${project.artifactId}.exe</outfile>
                             <jar>${project.build.directory}/${project.artifactId}-${project.version}.jar</jar>
                             <errTitle>DrawWKT Error</errTitle>
                             <classPath>
-                                <mainClass>drawwkt.Main</mainClass>
+                                <mainClass>${mainClass}</mainClass>
                                 </classPath>
                             <jre>
                                 <minVersion>21</minVersion>
